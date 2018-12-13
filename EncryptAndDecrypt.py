@@ -105,10 +105,10 @@ def Main():
     print("The string " + a + " shifted " + b + " times is " + c)
     print(CaesarDecrypt(c,b))
     #Testing VingenereEncryption/Decryption
-##    a = input("Give a message: ")
-##    b = input("Give a key as a string: ")
-##    c = Vingenere(a,b)
-##    print("The string " + a + " set to the key " + b + " is " + c)
-##    print(VingenereDecrypt(c,b))
+    a = input("Give a message: ")
+    b = input("Give a key as a string: ")
+    c = Vingenere(a,b)
+    print("The string " + a + " set to the key " + b + " is " + c)
+    print(VingenereDecrypt(c,b))
 
 Main()
