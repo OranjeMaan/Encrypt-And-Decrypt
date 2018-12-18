@@ -66,10 +66,7 @@ def Vingenere(message,key):
     for i in range(len(message)):
         a = lstAlphabet.index(message[i])
         b = lstAlphabet.index(key[i % len(key)])
-        if ((a + b) > 26):
-            output += lstAlphabet[a + b - 26]
-        else:
-            output += lstAlphabet[a + b]
+        output += lstAlphabet[(a + b) % 26]
     return output
 
 def VingenereDecrypt(message,key):
